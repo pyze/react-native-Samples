@@ -1,0 +1,5 @@
+rootProject.name = 'reactsample'
+include ':pyze-sdk-react-native'
+project(':pyze-sdk-react-native').projectDir = new File(rootProject.projectDir, '../node_modules/pyze-sdk-react-native/android')
+
+include ':app'

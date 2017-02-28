@@ -16,7 +16,7 @@
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication*)application willFinishLaunchingWithOptions:(NSDictionary*)launchOptions {
-  [Pyze initialize:@"WiVC0WNTSUuGm_YjrHqIXg"
+  [Pyze initialize:@"PASTE_PYZE_APP_KEY_HERE"
  withLogThrottling: PyzelogLevelMinimal]; //see https://growth.pyze.com
   return YES;
 }

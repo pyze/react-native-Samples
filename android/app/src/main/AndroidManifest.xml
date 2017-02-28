@@ -16,7 +16,7 @@
       android:label="@string/app_name"
       android:icon="@mipmap/ic_launcher"
       android:theme="@style/AppTheme">
-      <meta-data android:name="PyzeAppKey" android:value="caYQryoDS4eOJL4gk0oL1A"/>
+      <meta-data android:name="PyzeAppKey" android:value="PASTE_PYZE_APP_KEY_HERE"/>
       <activity
         android:name=".MainActivity"
         android:label="@string/app_name"

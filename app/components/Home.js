@@ -9,10 +9,6 @@ import{
 } from 'react-native';
 
 import{
-    Actions
-} from 'react-native-router-flux';
-
-import{
     Pyze
 } from 'pyze-sdk-react-native';
 class Home extends React.Component{
@@ -39,8 +35,7 @@ class Home extends React.Component{
     }
 
     openEventsScene(){
-        Actions.events({
-        });
+        this.props.navigation.navigate('Events');
     }
 
     openAboutPyzeUrl(){

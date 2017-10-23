@@ -7,6 +7,16 @@ import{
     StyleSheet,
     TextInput
 } from 'react-native';
+import Home from './components/Home'
+import Events from './components/Events'
+import {
+    StackNavigator,
+  } from 'react-navigation';
+
+  const StackNavigation = StackNavigator({
+    Home: { screen: Home },
+    Events: { screen: Events },
+  });
 
 import{
     PyzeEvents
@@ -22,19 +32,7 @@ class App extends React.Component{
     }
     render(){
         return(
-            <View>
-                <Text style={styles.title} >
-                    Post Custom Event
-                </Text>
-                <View style = {styles.button}>
-                <TextInput style={{width: 300, height: 50}}  placeholder='Custom Event Name' onChangeText={(text)=> this.setState({
-                        eventName: text
-                    })} value = {this.state.eventName} />
-                </View>
-                <View style = {styles.button}>
-                <Button title='Post Custom Event' onPress={()=> this.postEvent() } />
-                </View>
-            </View>
+           <StackNavigation />
         );
     }
     postEvent(){
